@@ -1,0 +1,98 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  color: white;
+}
+.nav-bar:hover {
+  background-color: black;
+}
+.nav-bar p {
+  display: inline;
+  margin-right: 2rem;
+}
+
+p:hover {
+  color: blue;
+  transform: scale(1.2);
+}
+.home {
+  background: url("https://picsum.photos/1920/1080?random=1") no-repeat center
+    center/cover;
+}
+
+.about {
+  background: url("https://picsum.photos/1920/1080?random=2") no-repeat center
+    center/cover;
+}
+
+.services {
+  background: url("https://picsum.photos/1920/1080?random=3") no-repeat center
+    center/cover;
+}
+
+.services-list {
+  display: flex;
+}
+
+.contact {
+  background: url("https://picsum.photos/1920/1080?random=4") no-repeat center
+    center/cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 3rem;
+  border-radius: 0 50% 0 50%;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+@media (max-width: 550px) {
+  .services-list {
+    flex-direction: column;
+  }
+  .nav-bar {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
+}
